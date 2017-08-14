@@ -6,7 +6,7 @@ qemu-efi (UEFI firmware for 64-bit ARM virtual machines)
 Here's how to install qemu-efi on Slackware.
 
 
-First, go to the Google Chrome site:
+First, go to the Debian Packages page for qemu-efi:
 
 https://packages.debian.org/stretch/qemu-efi
 
