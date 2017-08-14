@@ -1,0 +1,37 @@
+qemu-efi (UEFI firmware for 64-bit ARM virtual machines)
+--------------------------------------------------------
+
+(Adapted from Pat Volkerding's Google Chrome SlackBuild.)
+
+Here's how to install qemu-efi on Slackware.
+
+
+First, go to the Google Chrome site:
+
+https://packages.debian.org/stretch/qemu-efi
+
+Download the .deb package.
+
+
+Then, with the .deb package in the same directory as the
+qemu-efi.SlackBuild script, run the script as root to convert the .deb
+to a Slackware .txz:
+
+./qemu-efi.SlackBuild
+
+This will produce a Slackware compatible .txz package.  The exact
+version number in the package filename will depend on the version
+of qemu-efi found in the .deb package, but it will be something
+like:  qemu-efi-0~20161202.7bbe0b3e-noarch-1.txz
+
+You'll find the output package in the /tmp directory.
+
+
+Then, install the package (again as root):
+
+cd /tmp
+upgradepkg --install-new qemu-efi-0~20161202.7bbe0b3e-noarch-1.txz
+
+
+Enjoy!  :-)
+
